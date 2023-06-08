@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- Form Control Introduction -->
+    <section>
+        <h1>Form Control</h1>
+        <input type="text">
+        <button>JAB - Just A Button</button>
+        <button>JAB - Just A Button</button>
+        <button>JAB - Just A Button</button>
+    </section>
+    <hr>
+
+    <!-- Form tag -->
+    <section>
+        <form action="/some_link_to_send_data_to">
+            <h1>Form Tag and some basic Uses</h1>
+            <input type="text">
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- Name and Placeholder Attributes -->
+    <section>
+        <h1>Name and Placeholder Attributes</h1>
+        <h3>Form 1</h3>
+        <form action="http://www.google.com">
+            <input type="text" name="q">
+            <button>Submit</button>
+        </form>
+        <br>
+        <h3>Form 2</h3>
+        <form action="">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- Label and its Importance -->
+    <section>
+        <h1>Labels and labelling</h1>
+        <form action="">
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" name="firstname" placeholder="First Name">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Last Name">
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- Types of Inputs -->
+    <section>
+        <h1>Types of Inputs</h1>
+        <form action="">
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" name="firstname" placeholder="First Name">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" name="lastname" placeholder="Last Name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color">
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number" placeholder="Number">
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- Some More Form Controls -->
+    <section>
+        <h1>Other Form Controls</h1>
+        <h4>Form 1</h4>
+        <form action="">
+            <textarea name="" id="" cols="30" rows="10">If you do end up putting something here, it will always turn out as starter input.</textarea>
+            <input type="range" min="0" max="10" name="volumeLevel">
+            <button>Submit</button>
+        </form>
+
+        <h4>Form 2</h4>
+        <form action="">
+            <label for="chckbox">I agree to TOS</label>
+            <input type="checkbox" id="chckbox" name="TOS">
+            <button>Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- Select and Radio Button -->
+    <section>
+        <h1>Select and Radio Butttons</h1>
+        <h4>Form 1</h4>
+        <form action="">
+            <select name="" id="">
+                 <option value="s">Small</option>
+                 <option value="m">Medium</option>
+                 <option value="l">Large</option>
+                 <option value="xl">eXtra- Large</option>
+            </select>
+            <button>Submit</button>
+        </form>
+
+        <h4>Form 2</h4>
+        <form action="">
+            <label for="phone">Call Me!!</label>
+            <input type="radio" id="phone" name="contact" value="Phone">
+            <label for="emailc">Email Me!</label>
+            <input type="radio" id="emailc" name="contact" value="Email">
+            <button>Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
