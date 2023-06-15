@@ -1,17 +1,49 @@
-p{
-    color: coral;
+body {
+    background-color: #ab0a0a90;
 }
 
-a{
+p {
+    color: rebeccapurple;
+}
+
+a {
     color: cyan;
-    background-color: magenta;
+    background-color: #6f3e2d;
 }
 
-h2{
-    color: magenta ;
+h2 {
+    /* With Opacity Transparency will be for the whole element,  but with rgb'a', the trans[arency would just be in background color */
+    color: red;
+    background-color: rgba(0, 255, 38);
+    opacity: 0.6;
 }
 
-h1{
+h1 {
     color: teal;
-    background-color: yellow;
+    background-color: rgba(90, 180, 189, 0.4);
 }
+
+
+/* Look closely here and its HTML markup and you will understand Inheritance in CSS */
+
+ul {
+    color: gold;
+}
+
+li span {
+    color: whitesmoke;
+}
+
+/* Not Inheritable */
+
+.divafterh2 {
+    border: 2px solid rgb(221, 44, 174);
+}
+
+/* Can be inrited with a property but not recommended */
+
+p {
+    border: inherit;
+}
+
+/* It ends here */ß
