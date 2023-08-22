@@ -1,0 +1,35 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* Switch this on to see a very live preview of it */
+    /* direction: rtl; */
+}
+
+h1{
+    font-family: "Segoe UI", Futura, sans-serif;
+    font-size: 64px;
+    font-weight: normal;
+    /* For arabic and hebrew web pages this is the property */
+    /* direction: ltr; */
+    /* Yes That above is it ltr - left to right, rtl - right to left. How you want your text to go */
+    text-align: center;
+    letter-spacing: 20px;
+}
+
+p{
+    font-weight: bold;
+    /* To see the magic of Text-align uncomment below */
+    /* text-align: justify; */
+    /* Uncomment Below to see the magic of Word Spacing */
+    /* word-spacing: 12px;  */
+    /* Line height and its use, this number here multiplies the line height to be 2 time the font-size, so 20px font will have 50px line height */
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+a{
+    font-style: italic;
+}
+
+em{
+    font-style: normal;
+}
