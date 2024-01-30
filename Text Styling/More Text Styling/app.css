@@ -1,0 +1,23 @@
+body{
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+}
+
+/* Uppercase, Lowercase, Capitalise */
+
+h1{
+    /* Use to change the casing of text */
+    text-transform: uppercase;
+    /* Text-Decoration: (color) (where the line should be on the text) (Line Style) (Line Thickness) */
+    /* text-decoration-line: line-through;
+    text-decoration-color: cyan ;
+    text-decoration-style: wavy; */
+    /* text-decoration-thickness: 10px; */
+    text-decoration: magenta line-through wavy 10px;
+}
+
+a{
+    /* Text decoration mostly used with this for its underline */
+    /* text-decoration-line: none; */ /* The long version */ 
+    text-decoration: none; /* The short version */
+}
