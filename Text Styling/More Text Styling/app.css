@@ -1,23 +1,103 @@
-body{
+body {
     font-family: Montserrat, sans-serif;
-    font-weight: 900;
 }
 
-/* Uppercase, Lowercase, Capitalise */
+/* Had to do this because not going to use this code now */
+/* There are designs inside for revisit */
+li {
 
-h1{
-    /* Use to change the casing of text */
-    text-transform: uppercase;
-    /* Text-Decoration: (color) (where the line should be on the text) (Line Style) (Line Thickness) */
-    /* text-decoration-line: line-through;
+    /* Uppercase, Lowercase, Capitalise */
+
+    h1 {
+        /* Use to change the casing of text */
+        text-transform: uppercase;
+        /* Text-Decoration: (color) (where the line should be on the text) (Line Style) (Line Thickness) */
+        /* text-decoration-line: line-through;
     text-decoration-color: cyan ;
     text-decoration-style: wavy; */
-    /* text-decoration-thickness: 10px; */
-    text-decoration: magenta line-through wavy 10px;
+        /* text-decoration-thickness: 10px; */
+        text-decoration: magenta line-through wavy 10px;
+    }
+
+    a {
+        /* Text decoration mostly used with this for its underline */
+        /* text-decoration-line: none; */
+        /* The long version */
+        text-decoration: none;
+        /* The short version */
+    }
+
 }
 
-a{
-    /* Text decoration mostly used with this for its underline */
-    /* text-decoration-line: none; */ /* The long version */ 
-    text-decoration: none; /* The short version */
+/* Need to do this to advance in the course */
+/* There are designs inside a pointer for revisit */
+li {
+
+    /* Using id in html css */
+    #featured {
+        background-color: gold;
+        font-size: 20px;
+    }
+
+    #reviews {
+        text-decoration: gold underline;
+    }
+
+    /* Using class in html css */
+    .tag {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: .4%;
+    }
+
+    /* Normal CSS */
+    /* h2{
+    text-decoration: gold underline;
+} */
+
+    /* List Styling */
+    #cast {
+        /* list-style-type:none is used in navbars and is very common */
+        /* we can use listtype to be decimal but that should always go with orderedList(ol) tag and not ul */
+        list-style-type: '\1F44D';
+
+        /* Used to define whether the list-style-type should ne considered inside and with li or outside and without li. Not very common*/
+        list-style-position: inside;
+
+        /* list-style-image used to give custom image markers, but not very common */
+    }
+}
+
+/* Links and Pseudocode  */
+a {
+    color: olive;
+    text-decoration: none;
+}
+
+a:visited {
+    color: orangered;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+    /* Cursor is used to give user defined cursore sybols on mouse pointer */
+    /* This is anyway default browser behaviour so commenting this code as well */
+    /* cursor: pointer; */
+}
+
+/* Font Shorthands */
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    /* font-weight font-size font-family */
+    font: 100 50px Montserrat, sans-serif;
+}
+
+p {
+    /* font-weight font-size/line-height font-family */
+    font: 100 20px/2 Montserrat, sans-serif;
 }
