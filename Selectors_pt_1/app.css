@@ -13,6 +13,7 @@ h6 {
 }
 
 /* Not using this css but here are all the explainations, thats why put under section, since no section tag in our html*/
+/* remove section as the tag not content to see the difference each style makes */
 section {
 
 
@@ -77,11 +78,12 @@ body{
     ol>li {
         border: 1px solid red;
     }
+
+    /* Compounde selectors */
+    /* Only h2 elemets with class score will be selected */
+    /* also can use it as .sscore.big which means an element with both these classes will only be selected */
+    h2.score {
+        color: blueviolet;
+    }
 }
 
-/* Compounde selectors */
-/* Only h2 elemets with class score will be selected */
-/* also can use it as .sscore.big which means an element with both these classes will only be selected */
-h2.score{
-    color: blueviolet;
-}
