@@ -1,89 +1,34 @@
-body {
-    font-family: Merriweather, serif;
+/* Select the paragraphs that come immediately after a <hr> element and make them red */
+hr+p{
+    color: red;
 }
 
-/* Use comma to style multiple elemts the same way */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Work Sans", sans-serif;
+
+/* Select the paragraphs that are siblings to h2 elements and give them a 20 pixel font size*/
+h2 ~ p{
+    font-size: 20px;
 }
 
-/* Not using this css but here are all the explainations, thats why put under section, since no section tag in our html*/
-/* remove section as the tag not content to see the difference each style makes */
-section {
 
-
-    /* Used to reset all geenral browser default styles so we can start anew
-Alternate between * and body to see the difference between the two 
-Basically * means every single element, while body means just the body tag*/
-    /* * {
-    border: 1px solid green;
-    margin: 0;
-    padding: 0;
+/* Select the link inside of the footer and give it a magenta color WHEN a user hovers over it */
+footer a:hover{
+    color: magenta;
 }
 
-body{
-    border: 1px solid green;
-} */
-
-    /* Element Selector */
-    p {
-        color: purple;
-    }
-
-    /* Class Selector */
-    .tag {
-        color: gold;
-    }
-
-    /* Id Selector */
-    #featured {
-        color: gold;
-    }
-
-    input[type="number"] {
-        background-color: gold;
-    }
-
-    /* Asterisk(*) for matching in the entire link, '^' for matching t start and $ for matching at the end */
-    a[href*="wiki"] {
-        color: cyan;
-    }
-
-    a[href^="#"] {
-        color: darkviolet;
-    }
-
-
-    /* Multiple selectors can also be combined as such */
-    .tag,
-    #featured,
-    .score {
-        color: white;
-        background-color: orangered;
-    }
-
-    /* space means selecting the last mentioned element inside all the previously mentioned parent. Only the last mentioned elemtn will be styled as such */
-    /* This could be 20 layers below the parent and still selected, here span for example */
-    #cast span {
-        color: grey;
-    }
-
-    /* This is for just immediate descedants, that means a childs child will not h=be styled only the immediate child */
-    /* Again any selectors can be used here and not just elements. And can be used in any combination */
-    ol>li {
-        border: 1px solid red;
-    }
-
-    /* Compounde selectors */
-    /* Only h2 elemets with class score will be selected */
-    /* also can use it as .sscore.big which means an element with both these classes will only be selected */
-    h2.score {
-        color: blueviolet;
-    }
+/* Select any checked checkboxes and give them a box shadow of '0 0 0 3px orange' */
+input[type='checkbox']:checked{
+    box-shadow: 0 0 0 3px orange;
 }
 
+
+/* Select every other li element (2nd, 4th, 6th, etc) inside of the ul with the class 'blah' and give them a magenta background */
+ul.blah li:nth-of-type(2n){
+    background-color: magenta;
+}
+
+
+/* Select the first letter of each paragraph and give them a color of blue and a font-size of 30 pixels */
+p::first-letter{
+    color: blue;
+    font-size: 30px;
+}
