@@ -1,0 +1,80 @@
+/* Open and remove secton to learn this two sections about Background Properties*/
+
+/* Personallu would recommend just section 1 and 2 for some important background properties, after that is all extra */
+.section .one {
+  .box {
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+    /* Can stack images as such */
+    background-image: url(images/peacock.png), url(images/sunset.jpg);
+    /* Can use both images and color like this, but img has to be transparent */
+    /* background-color: aqua; */
+    background-image: url(images/peacock.png);
+    /* To not repeat background */
+    background-repeat: no-repeat;
+  }
+}
+
+.section .two {
+  .box {
+    border: 1px solid red;
+    height: 500px;
+    width: 900px;
+    background-image: url("images/people.jpg");
+    /* Contain and cover learn the difference by changin it here */
+    background-size: cover;
+    /* MDN this, there is a lot to learn here, but top,left, bottom, right, center, that is all that is necessary */
+    background-position: center;
+    /* This helps in decideing where the border heos to on content, on-padding, or outiside padding */
+    /* content-box, including padding, padding-box will be in just outside the content, and border-box will be on the content*/
+    /* Uncomment below to see each */
+    border: 20px dashed yellow;
+    padding: 30px;
+    background-clip: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/* Gradients */
+.section .three {
+  .box {
+    border: 2px solid black;
+    height: 700px;
+    width: 400px;
+    /* Linear Gradient */
+    /* Better to use just background for this instead of background-image */
+    /* background-image: linear-gradient(red, blue, white, yellow); */
+    /* Radial Gradient starts from the center */
+    /* background-image: radial-gradient(cyan, pink, yellow); */
+    /* Conic Gradient folds like a cone */
+    /* background-image: conic-gradient(red, blue, yellow,  red); */
+    /* repeating linear gradient: keeps repeating in linear */
+    /* Same with repeating radial gradient */
+    /* background-image: repeating-linear-gradient(45deg, red, blue 10%); */
+  }
+}
+
+/* Background Shorthand */
+.section .four {
+  .box {
+    border: 2px solid black;
+    width: 400px;
+    height: 500px;
+    background: url(images/peacock.png) no-repeat center/100%,
+      url(images/sunset.jpg) no-repeat center;
+  }
+}
+
+/* Filter property and usage */
+.section .five {
+  .box {
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+    background: url(images/people.jpg) no-repeat center;
+    background-size: cover;
+    /* Can stack then on top of one another */
+    filter: blur(5px) contrast(95%) hue-rotate(180deg);
+  }
+}
