@@ -1,0 +1,25 @@
+
+p{
+    border: 1px solid black;
+    background-color: magenta ;
+    margin: 30px;
+    font-size: 2rem;
+    /* This is the default for position property, and doesnt allow any movement with top, right.... properties */
+    position: static;
+}
+
+p{
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Position Relative understand */
+.special{
+    background-color: yellow;
+    position: relative;
+    top: 200px;
+    left: 40px;
+    /* use this to decide which layer will come on which */
+    z-index: 0;
+}
