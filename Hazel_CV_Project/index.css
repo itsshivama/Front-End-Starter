@@ -163,12 +163,55 @@ footer {
   padding: 60px;
 }
 
-.footer-content{
-    text-align: center;
+.footer-content {
+  text-align: center;
 }
 
 .footer-content img {
   height: 2rem;
   width: 2rem;
   margin: 0 8px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero-content {
+    padding: 0 7%;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .hero-content {
+    padding: 0 2%;
+  }
+  .blog-content,
+  .event-content {
+    padding: 0 8%;
+  }
+  .tagline {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  .two-coloumn-section > p {
+    width: 100%;
+  }
+  .two-coloumn-section .skills {
+    width: 100%;
+  }
+  .two-coloumn-section .blog-posts {
+    width: 100%;
+  }
+  .section-heading {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tagline {
+    font-size: 2rem;
+  }
+  .links{
+    display: none;
+  }
 }
