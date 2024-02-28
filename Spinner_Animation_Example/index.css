@@ -1,0 +1,77 @@
+/* Just to align our spinner to the page center, totally can ignore this */
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* Spinner 1 Example */
+.spinner {
+  height: 200px;
+  width: 200px;
+  border: 7px solid #edede9;
+  border-top-color: #d90429;
+  /* Try Commenting this below, that is a fun effect */
+  border-radius: 50%;
+  /* Asnimation shorthand, order doesnt really matter, go crazy */
+  animation: spin 0.78s infinite ease-in-out;
+  box-sizing: border-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Spinner 2 Example */
+
+.loader {
+  box-sizing: border-box;
+}
+
+.loader span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d90429;
+  margin: 0 10px;
+}
+
+/* Remove alternate-reverse for normal loader, this is just something fun and different */
+
+.loader span:nth-child(1) {
+  animation: 0.75s 0.1s jump infinite alternate-reverse ease-in-out;
+}
+
+.loader span:nth-child(2) {
+  animation: 0.75s 0.25s jump infinite alternate-reverse ease-in-out;
+}
+
+.loader span:nth-child(3) {
+  animation: 0.75s 0.4s jump infinite alternate-reverse ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+
+  20% {
+    transform: translateY(-30px) scale(1.2);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+}
