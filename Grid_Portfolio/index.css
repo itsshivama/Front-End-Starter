@@ -46,12 +46,53 @@ body {
   width: 50px;
 }
 
-.navbar .bar {
+.navbar .hamburger:hover {
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
   background-color: black;
   height: 4px;
   width: 36px;
   margin: 3px;
   border-radius: 10px;
+}
+
+.mobileNav{
+  height: 100vh;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.5s;
+}
+
+.mobileNav a{
+  text-decoration: none;
+  color: black;
+  padding: 16px 0;
+}
+
+.mobileNav a:hover{
+  text-decoration: underline;
+}
+
+.mobileNav img{
+  height: 24px;
+  width: 24px;
+}
+
+.openDrawer{
+  transform: translateX(-160px);
 }
 
 .project-grid {
@@ -173,7 +214,7 @@ body {
     background-color: white;
     width: 100%;
     box-sizing: border-box;
-}
+  }
   .navbar .right {
     display: none;
   }
@@ -193,14 +234,53 @@ body {
       "cup cup"
       "foam foam"
       "dimensional dimensional";
-      margin-top: 100px;
+    margin-top: 100px;
   }
   .project .overlay {
     font-size: 24px;
   }
   /* If you prefer single line approach, totally optional */
-  .footer{
+  .footer {
     font-size: 14px;
     padding: 32px;
+  }
+}
+
+.animateBar1 {
+  animation: flipBar1 0.25s forwards ease-in-out;
+}
+.animateBar2 {
+  animation: fadeBar2 0.25s forwards ease-in-out;
+}
+.animateBar3 {
+  animation: flipBar3 0.25s forwards ease-in-out;
+}
+
+@keyframes flipBar1 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(45deg) translate(4px, 10px);
+  }
+}
+
+@keyframes fadeBar2 {
+  from {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes flipBar3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-45deg) translate(4px, -10px);
   }
 }
